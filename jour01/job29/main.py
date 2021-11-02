@@ -18,9 +18,9 @@ def base(longueur):
 
 def pente(longueur, hauteur):
     espace = " "
-    bord1 = '/'
-    bord2 = '\\'
-    x = 0
+    bord1: str = '/'
+    bord2: str = '\\'
+    x: int = 0
     while x < (hauteur - 1):
         vide_bord: int = int(longueur / 2) - (x + 1)
         print((espace * vide_bord) + bord1 + (espace * (x*2)) + bord2)
