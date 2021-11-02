@@ -10,7 +10,7 @@ def test(notes):
             new_notes.append(note)
         else:
             new_notes.append(note)
-    print(new_notes)
+    return new_notes
 
 
-test([83, 82])
+print(test([83, 82]))
