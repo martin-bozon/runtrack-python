@@ -1,6 +1,6 @@
 def replace_letter(mot):
-    str.split(mot)
-    print(str.split(mot[1]))
+    liste = str.split(mot)
+    print(liste)
 
 
 word = input('mot a 4 caractères')
