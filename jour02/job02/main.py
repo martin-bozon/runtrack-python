@@ -1,5 +1,4 @@
-import personne
-
+from personne import Personne
 
 class Livre:
     def __init__(self, titre):
@@ -10,23 +9,24 @@ class Livre:
         print(self.Ltitre)
         #self.auteur.ecrivreUnLivre(self.Ltitre)
 
+    def gettitre(self):
+        return self.Ltitre
 
-class Auteur(personne.Personne):
-    def __init__(self, firstname, lastname):
+
+class Auteur(Personne):
+    def __init__(self, firstname, lastname, oeuvre):
         super(Auteur, self).__init__(firstname, lastname)
-        self.Oeuvres = ["Un livre", "Deux livre"]
+        self.Oeuvre = oeuvre
 
     def listerOeuvre(self):
-        print(self.Oeuvres)
+        print(self.Oeuvre)
         
     def ecrivreUnLivre(self, livre):
-        #nouvelle_oeuvre = Livre(livre)
-        #nouvelle_oeuvre.()
-        self.Oeuvres.append(livre)
+        nouvelle_oeuvre = Livre(livre)
+        self.Oeuvre.append(nouvelle_oeuvre.gettitre())
 
 
-L = Livre("Python pour les nuls")
-A = Auteur("Bob", "Le bricoleur")
+A = Auteur("Bob", "Le bricoleur", ['un livre', 'deux livre'])
 A.listerOeuvre()
 A.ecrivreUnLivre("Trois livre")
 A.listerOeuvre()
