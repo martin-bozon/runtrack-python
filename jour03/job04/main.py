@@ -21,6 +21,6 @@ for line in lines:
                     alphabet[key] += 1
 
 
-# print(alphabet)
+print(alphabet)
 
 
