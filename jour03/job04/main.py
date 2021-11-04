@@ -1,5 +1,6 @@
 import re
 
+
 count = 0
 
 f = open("data.txt", "r")
@@ -20,4 +21,6 @@ for line in lines:
                     alphabet[key] += 1
 
 
-print(alphabet)
+# print(alphabet)
+
+
