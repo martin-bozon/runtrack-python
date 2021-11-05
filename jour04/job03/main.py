@@ -13,7 +13,6 @@ def plateau(n, m):
 
 def ligne(n):
     ligneplateau = []
-    i = n
     while n > 0:
         ligneplateau.append('O')
         n -= 1
