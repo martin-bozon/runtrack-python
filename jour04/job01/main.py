@@ -1,3 +1,6 @@
+number = int(input("Entrez un entier:"))
+
+
 def factorielle(n):
     if n == 0:
         return 1
@@ -5,4 +8,4 @@ def factorielle(n):
         return n * factorielle(n-1)
 
 
-print(factorielle(5))
+print(factorielle(number))
